@@ -34,17 +34,10 @@ function searchPlace() {
             for(let i = 0; i < 2; i++) {
             resultDiv.innerHTML += `<h2>${names[i]}</h2>`;
             resultDiv.innerHTML += `<img src="./Images/${images[i]}" alt="hjh">`;
-            resultDiv.innerHTML += `<p><strong>Description:</strong>${descs[i]}</p>`;
+            resultDiv.innerHTML += `<p>${descs[i]}</p>`;
           }
           
 
-            console.log(country)
-            console.log(names)
-            console.log(names[2])
-            console.log(images)
-            console.log(images[2])
-            console.log(descs)
-            console.log(descs[2])
         }
         else if (input === 'temples' || input === 'temple'){
             const temple = data.temples;
@@ -52,18 +45,11 @@ function searchPlace() {
                 names.push(item.name);
                 images.push(item.imageUrl);
                 descs.push(item.description);            })
-                console.log(temple)
-                console.log(names)
-                console.log(names[1])
-                console.log(images)
-                console.log(images[1])
-                console.log(descs)
-                console.log(descs[1])
 
                 names.forEach((item, i) => {
                     resultDiv.innerHTML += `<h2>${names[i]}</h2>`;
                     resultDiv.innerHTML += `<img src="./Images/${images[i]}" alt="hjh">`;
-                    resultDiv.innerHTML += `<p><strong>Description:</strong>${descs[i]}</p>`;
+                    resultDiv.innerHTML += `<p>${descs[i]}</p>`;
                   })
               
         }
@@ -73,18 +59,12 @@ function searchPlace() {
                 names.push(item.name);
                 images.push(item.imageUrl);
                 descs.push(item.description);            })
-                console.log(beach)
-                console.log(names)
-                console.log(names[1])
-                console.log(images)
-                console.log(images[1])
-                console.log(descs)
-                console.log(descs[1])
+        
 
                 names.forEach((item, i) => {
                     resultDiv.innerHTML += `<h2>${names[i]}</h2>`;
                     resultDiv.innerHTML += `<img src="./Images/${images[i]}" alt="hjh">`;
-                    resultDiv.innerHTML += `<p><strong>Description:</strong>${descs[i]}</p>`;
+                    resultDiv.innerHTML += `<p>${descs[i]}</p>`;
                   })
         } else {
             console.log("NO SUCH THING")

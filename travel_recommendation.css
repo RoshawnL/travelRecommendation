@@ -97,6 +97,10 @@ nav {
     height: 100px;
   }
 
+#result p{
+  margin-left: 20px;
+}
+
 .vl {
     border-left: 1px solid white;
     height: 200px;
