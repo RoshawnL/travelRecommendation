@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- <meta charset="UTF-8"> -->
+  <title>Travel Dreams</title>
+  <link rel="stylesheet" href="./travel_recommendation.css">
+</head>
+<body>
+    <div class="navbar">
+   <nav><h1>Travel Dreams</h1>
+<ul>
+  <li><a href="./travel_recommendation.html" id="home">Home </a></li>
+  <li><a href="./travel_rec_about.html" id="about">About Us </a></li>
+  <li><a href="./travel_rec_contact.html" id="contact">Contact Us </a></li>
+  <div class = "input-wrapper">    
+  </li>
+  </div>
+</ul>
+</nav>
+</div>
+<div class="body">
+<div class="social_media">
+    <div class="vl"></div>
+    <img src="./Images/twitter.svg">
+    <img src="./Images/facebook.svg">
+    <img src="./Images/instagram.svg">
+    <img src="./Images/youtube.svg">
+</div>
+<div class="contact_body">
+<div class="contact_us">
+<h1>CONTACT US</h1>
+<div>
+<p>Get in touch with us! </p>
+</div>
+</div>
+<form id="contactForm">
+    <div class="label">
+      <label for="name">Name</label>
+      <input type="text" id="contact_txt" name="name" placeholder="Enter your name" required>
+    </div>
+    <div class="label">
+      <label for="email">Email</label>
+      <input type="email" id="contact_txt" name="email" placeholder="Enter your email" required>
+    </div>
+    <div class="label">
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="10" placeholder="Enter your message" required></textarea>
+    </div>
+    <button id="submit" type="submit" onclick="thankyou()">Submit</button>
+  </form>
+    </div>
+</div>
+<script src="./travel_recommendation.js"></script>
+</body>
+</html>
