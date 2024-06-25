@@ -1,10 +1,10 @@
 const report = document.getElementById("report");
 const btnSearch = document.getElementById('btnSearch');
-const btnReset = document.getElementById('btnReset');
+const btnClear = document.getElementById('btnClear');
 
-function resetForm() {
-    document.getElementById("placeInput").value = "";
-    document.getElementById('result').value ="";
+function clearForm() {
+    document.getElementById('placeInput').value = "";
+    document.getElementById('result').innerHTML = "";
   }
 
 function searchPlace() {
@@ -16,7 +16,7 @@ function searchPlace() {
         let names = []
         let images = []
         let descs = []
-        if (input === 'countries'){
+        if (input === 'countries' || input === 'country'){
             
             const country = data.countries;
             country.forEach((item) => {
@@ -46,7 +46,7 @@ function searchPlace() {
             console.log(descs)
             console.log(descs[2])
         }
-        else if (input === 'temples'){
+        else if (input === 'temples' || input === 'temple'){
             const temple = data.temples;
             temple.forEach((item)=> {
                 names.push(item.name);
@@ -67,7 +67,7 @@ function searchPlace() {
                   })
               
         }
-        else if (input === 'beaches'){
+        else if (input === 'beaches' || input === 'beach'){
             const beach = data.beaches;
             beach.forEach((item)=> {
                 names.push(item.name);
@@ -100,5 +100,9 @@ function searchPlace() {
       });
   }
 
+  function thankyou(){
+    alert('Thank you for contacting us!')
+}
+
 btnSearch.addEventListener('click', searchPlace);
-btnReset.addEventListener("click", resetForm);
+btnClear.addEventListener("click", clearForm);

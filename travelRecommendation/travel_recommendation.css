@@ -7,13 +7,7 @@
     box-sizing: border-box;
 }
 
-/* .navbar{
-    display:flex;
-    justify-content: space-between;
-    flex-direction: row;
-    gap: 40px;
-} */
-
+/*nav bar*/
 nav {
     background-color: #2c3c2a;
     display: flex;
@@ -54,6 +48,7 @@ nav {
     background-size: cover;
   }
   
+/*home page*/
   #placeInput{
     width: 400px;
     height: 40px;
@@ -133,6 +128,52 @@ nav {
     width: 30%;
 }
 
+#btnClear{
+    position: absolute;
+    top: 7px;
+    right: 25px;
+    padding: 7px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+  }
+
+  #btnSearch{
+    position: absolute;
+    top: 7px;
+    right: 95px;
+    padding: 7px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+  }
+  
+  #btnSearch:hover {
+    background-color: #45a049;
+  }
+
+  #btnClear:hover {
+    background-color: #45a049;
+  }
+
+  #book{
+    padding: 7px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+  }
+
+  #book:hover {
+    background-color: #45a049;
+  }
+
+/*about us page*/
 .about_body{
     display: flex;
     flex-direction: column;
@@ -201,6 +242,7 @@ nav {
     background-color: rgba(0, 0, 0, 0.4);
     border-radius: 15px;}
 
+/*contact us page*/
 .contact_body{
     display: flex;
     flex-direction: row;
@@ -254,6 +296,7 @@ label {
     background-color: rgba(0, 0, 0, 0.4);
     border-radius: 5px;
     border: none;
+    color: white;
 }
 
 #message{
@@ -262,6 +305,7 @@ label {
     background-color: rgba(0, 0, 0, 0.4);
     border-radius: 5px;
     border: none;
+    color: white;
 }
 
 #submit{
@@ -279,51 +323,9 @@ label {
 background-color: #45a049;
 }
 
-/* Buttons */
-#btnReset{
-    position: absolute;
-    top: 7px;
-    right: 25px;
-    padding: 7px 15px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    cursor: pointer;
-    border-radius: 3px;
-  }
 
-  #btnSearch{
-    position: absolute;
-    top: 7px;
-    right: 95px;
-    padding: 7px 15px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    cursor: pointer;
-    border-radius: 3px;
-  }
-  
-  #btnSearch:hover {
-    background-color: #45a049;
-  }
 
-  #btnReset:hover {
-    background-color: #45a049;
-  }
 
-#book{
-    padding: 7px 15px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    cursor: pointer;
-    border-radius: 3px;
-  }
-
-  #book:hover {
-    background-color: #45a049;
-  }
 
 
 
